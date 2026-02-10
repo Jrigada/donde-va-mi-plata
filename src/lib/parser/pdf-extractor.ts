@@ -28,8 +28,8 @@ export async function extractPDFContent(
   // Dynamic import to avoid SSR issues
   const pdfjsLib = await import("pdfjs-dist");
 
-  // Set up the worker using unpkg CDN which mirrors npm packages
-  pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
+  // Set up the worker from local public folder
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
 
   const pdf = await pdfjsLib.getDocument({ data: file }).promise;
   const pages: PageContent[] = [];
