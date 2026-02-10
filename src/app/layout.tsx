@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, IBM_Plex_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const outfit = Outfit({
