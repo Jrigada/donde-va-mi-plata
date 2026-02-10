@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ¿Dónde va mi plata?
 
-## Getting Started
+Analizador de extractos bancarios de Banco Galicia. 100% privado, corre en tu navegador.
 
-First, run the development server:
+**https://dondevamiplata.vercel.app**
+
+## Qué hace
+
+- Parsea PDFs de extractos de caja de ahorro y cuenta corriente
+- Categoriza gastos automáticamente
+- Detecta suscripciones recurrentes
+- Muestra impuestos y percepciones
+- Compara múltiples meses
+
+## Privacidad
+
+Tu archivo nunca sale de tu computadora. No hay backend, no hay base de datos, no hay APIs. Todo el procesamiento ocurre en el navegador con JavaScript.
+
+Podés verificarlo vos mismo abriendo DevTools → Network mientras subís un archivo.
+
+## Correr localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contribuir templates de otros bancos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Si tu banco no está soportado, podés contribuir un extracto anonimizado. La herramienta de ofuscación está en la página principal - reemplaza todos los datos personales localmente antes de descargar.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Licencia
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
