@@ -1,5 +1,17 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Datos sensibles - NUNCA subir
+/templates/
+*.pdf
+SESSION.md
+.claude/
+.playwright-mcp/
+/docs/
+
+# Screenshots de desarrollo
+*.png
+!public/*.png
+
 # dependencies
 /node_modules
 /.pnp
